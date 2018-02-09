@@ -1,0 +1,14 @@
+# Correct C++ chapter's .travis.yml file
+# For all chapters, these are identical
+# Do not edit by hand
+
+language: cpp
+compiler: gcc
+
+script: 
+  - qmake
+  - make
+  - ./love --help
+  - ./love --about
+  - ./love --help
+  - ./love --version
